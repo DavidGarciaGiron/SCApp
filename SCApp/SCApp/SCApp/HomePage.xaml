@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SCApp.HomePage">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="https://t.ipadizate.es/2018/07/Focos5-320x693.png" Aspect="AspectFill"/>
+            <BoxView Color="#030E1B" Opacity="0.6"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" Source="welcome.png" 
+                       WidthRequest="200" HeightRequest="200" Margin="0,50,0,15"/>
+
+                <StackLayout Grid.Row="1" Padding="30,20">
+                    <Label Text="Sistema Contable HADAR SLCE" TextColor="White"/>
+                </StackLayout>
+
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

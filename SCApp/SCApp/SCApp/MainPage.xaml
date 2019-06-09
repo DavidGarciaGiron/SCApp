@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SCApp.MainPage"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="https://t.ipadizate.es/2018/07/Focos5-320x693.png" Aspect="AspectFill"/>
+            <BoxView Color="#030E1B" Opacity="0.6"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" Source="logo1.png" 
+                       WidthRequest="200" HeightRequest="200" Margin="0,50,0,15"/>
+
+                <StackLayout Grid.Row="1" Padding="30,20">
+                    <Entry Placeholder="Usuario" PlaceholderColor="White" TextColor="White"/>
+                    <Entry Placeholder="Contraseña" PlaceholderColor="White" TextColor="White" IsPassword="True" Margin="0,0,0,20"/>
+                    <Button Text="Iniciar Sesión" BackgroundColor="White" BorderRadius="20" TextColor="Black" x:Name="btnIniciar"/>
+                </StackLayout>
+
+            </Grid>                                   
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>
